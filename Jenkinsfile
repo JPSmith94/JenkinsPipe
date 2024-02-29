@@ -8,8 +8,8 @@ pipeline {
         }
         stage("Build Images"){
             steps{
-                sh "docker build -t jakepaulsmith/nginx ./nginx"
-                sh "docker build -t jakepaulsmith/flask-app ./python"              
+                sh "docker build -t nginx ./nginx"
+                sh "docker build -t flask-app ./python"              
             }
         }
         stage("Run Containers"){
