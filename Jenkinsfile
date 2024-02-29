@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Clean up"){
             steps{
-                sh "bash cleanup.sh"
+                sh "bash cleanup.sh || true"
             }
         }
         stage("Build Images"){
